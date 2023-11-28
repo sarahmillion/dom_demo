@@ -1,6 +1,16 @@
-const h1 = window.document.querySelector('h1');
+const numbersList = document.querySelector('#numbersList');
+const oddsList = document.querySelectior('#oddsList');
 
+const numbers = [1, 2, 3, 4, 55, 66, 72];
 
-window.setTimeout(()=>{
-h1.innerHTML = 'Hello World!';
-}, 2000);
+const html = number.map(function(num){
+return `<li>${num}</li>`;
+}).join(' ');
+
+numbersList.innerHTML = html;
+
+const odds = numbers.filter(function(num){
+return num % 2 === 1;
+});
+
+console.log(odds);
